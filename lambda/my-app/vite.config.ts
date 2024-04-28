@@ -10,7 +10,7 @@ export default defineConfig({
 	plugins: [
 		remix(),
 		devServer({
-			entry: 'server.ts',
+			entry: 'server.dev.ts',
 			exclude: [...defaultOptions.exclude, '/assets/**', '/app/**'],
 			injectClientScript: false,
 		})
