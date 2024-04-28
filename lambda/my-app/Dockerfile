@@ -5,7 +5,7 @@ RUN npm ci
 COPY public/ public/
 COPY components.json .
 COPY postcss.config.js .
-COPY tailwind.config.js .
+COPY tailwind.config.ts .
 COPY tsconfig.json .
 COPY vite.config.ts .
 COPY app/ app/
