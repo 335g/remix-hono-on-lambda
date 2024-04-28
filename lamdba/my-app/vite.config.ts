@@ -2,12 +2,19 @@ import { vitePlugin as remix } from "@remix-run/dev";
 import { installGlobals } from "@remix-run/node";
 import path from "path";
 import { defineConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
+import devServer, { defaultOptions } from '@hono/vite-dev-server';
 
 installGlobals();
 
 export default defineConfig({
-	plugins: [remix(), tsconfigPaths()],
+	plugins: [
+		remix(),
+		devServer({
+			entry: 'server.ts',
+			exclude: [...defaultOptions.exclude, '/assets/**', '/app/**'],
+			injectClientScript: false,
+		})
+	],
 	resolve: {
 		alias: {
 			"~": path.resolve(__dirname, "./app"),

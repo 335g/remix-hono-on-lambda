@@ -14,15 +14,18 @@
     "@remix-run/react": "^2.9.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "hono": "^4.2.8",
     "isbot": "^4.1.0",
     "lucide-react": "^0.376.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "remix-hono": "^0.0.16",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.1",
+    "@hono/vite-dev-server": "^0.12.0",
     "@remix-run/dev": "^2.9.1",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.20",
