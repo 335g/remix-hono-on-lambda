@@ -4,7 +4,7 @@
     "enabled": true
   },
   "files": {
-    "include": ["app/**/*.tsx", "*.json"]
+    "include": ["app/**/*.tsx", "server.ts", "*.json"]
   },
   "linter": {
     "enabled": true,
